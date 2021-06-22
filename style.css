@@ -269,6 +269,37 @@ nav a:hover::after {
   resize: vertical;
 }
 
+/* Footer ---------------------------------- */
+footer {
+  background: url(./images/jp-background.png);
+  background-size: cover;
+  border-top: 0.5rem solid #dbbd44;
+  border-bottom: 2rem solid #dbbd44;
+  position: relative;
+}
+
+footer .social-links {
+  justify-content: space-between;
+}
+
+footer .social-links img {
+  height: 30px;
+  width: 30px;
+}
+
+footer .social-links a {
+  background-color: #dbbd44;
+  align-items: center;
+  padding: 1rem 15rem;
+}
+
+footer .copyright {
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+  transform: translateX(-50%);
+}
+
 /*Navbar Hamburger Menu*/
 @media (max-width: 375px) {
   .mob-only {
