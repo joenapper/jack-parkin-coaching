@@ -24,8 +24,26 @@ a {
   color: inherit;
 }
 
+.container {
+  width: 100%;
+  padding: 4rem 15%;
+}
+
 .mob-only {
   display: none;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  background: url(./images/jp-background.png);
+  padding: 1rem 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.15rem;
 }
 
 /* Header ---------------------------------- */
@@ -169,13 +187,36 @@ nav a:hover::after {
 .hero-content h3 {
   font-size: 1.5rem;
   letter-spacing: 2px;
+  margin-bottom: 1rem;
 }
 
-.hero-content a {
-  background-color: #010101;
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  font-size: 1.25rem;
+/* Intro ---------------------------------- */
+.intro {
+  display: flex;
+}
+
+.intro .left {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro .left img {
+  width: calc(50% - 0.5rem);
+}
+
+.intro .right {
+  width: 40%;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.intro .right h2 {
+  font-size: 1.5rem;
+  border-bottom: 3px solid #dbbd44;
 }
 
 /*Navbar Hamburger Menu*/
