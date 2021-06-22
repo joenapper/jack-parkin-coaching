@@ -219,6 +219,32 @@ nav a:hover::after {
   border-bottom: 3px solid #dbbd44;
 }
 
+/* Call To Action ---------------------------------- */
+.cta {
+  background: url(./images/jp-background.png);
+  background-size: cover;
+  color: #fff;
+  border-top: 0.5rem solid #dbbd44;
+  border-bottom: 0.5rem solid #dbbd44;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.cta h3 {
+  font-size: 1.5rem;
+}
+
+.cta a {
+  border-bottom: 3px solid #dbbd44;
+}
+
 /*Navbar Hamburger Menu*/
 @media (max-width: 375px) {
   .mob-only {
