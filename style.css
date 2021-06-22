@@ -24,6 +24,10 @@ a {
   color: inherit;
 }
 
+.flex {
+  display: flex;
+}
+
 .container {
   width: 100%;
   padding: 4rem 15%;
@@ -44,6 +48,29 @@ a {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.15rem;
+}
+
+.img-group {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-group img {
+  width: calc(50% - 0.5rem);
+}
+
+.txt-group {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.txt-group h2 {
+  font-size: 1.5rem;
+  border-bottom: 3px solid #dbbd44;
 }
 
 /* Header ---------------------------------- */
@@ -191,32 +218,8 @@ nav a:hover::after {
 }
 
 /* Intro ---------------------------------- */
-.intro {
-  display: flex;
-}
-
-.intro .left {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.intro .left img {
-  width: calc(50% - 0.5rem);
-}
-
-.intro .right {
-  width: 40%;
+.right.txt-group {
   padding-left: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.intro .right h2 {
-  font-size: 1.5rem;
-  border-bottom: 3px solid #dbbd44;
 }
 
 /* Call To Action ---------------------------------- */
@@ -243,6 +246,27 @@ nav a:hover::after {
 
 .cta a {
   border-bottom: 3px solid #dbbd44;
+}
+
+/* Contact ---------------------------------- */
+.left.txt-group {
+  padding-right: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  border: 1px solid #dbbd44;
+  padding: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
 }
 
 /*Navbar Hamburger Menu*/
