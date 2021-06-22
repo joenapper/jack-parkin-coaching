@@ -127,6 +127,57 @@ nav a:hover::after {
   }
 }
 
+/* Hero ---------------------------------- */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(./images/jp-hero.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  border-bottom: 3px solid #dbbd44;
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.hero-content a {
+  background-color: #010101;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+}
+
 /*Navbar Hamburger Menu*/
 @media (max-width: 375px) {
   .mob-only {
