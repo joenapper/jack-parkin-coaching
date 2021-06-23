@@ -308,8 +308,8 @@ nav a:hover::after {
 footer {
   background: url(./images/jp-background.png);
   background-size: cover;
-  border-top: 0.5rem solid #dbbd44;
-  border-bottom: 2rem solid #dbbd44;
+  border-top: 1rem solid #dbbd44;
+  border-bottom: 4rem solid #dbbd44;
   position: relative;
 }
 
@@ -317,25 +317,37 @@ footer .social-links {
   justify-content: space-between;
 }
 
-footer .social-links img {
-  height: 30px;
-  width: 30px;
+footer .social-links li {
+  width: 600px;
 }
 
 footer .social-links a {
   background-color: #dbbd44;
   align-items: center;
   padding: 1.5rem 3rem;
+  justify-content: center;
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
 }
 
-footer .social-links a img {
+footer .social-links img {
+  height: 40px;
+  width: 40px;
   margin-right: 1rem;
+}
+
+footer .footer-img {
+  position: absolute;
+  bottom: -4rem;
+  right: 0;
+  height: 500px;
 }
 
 footer .copyright {
   position: absolute;
   left: 50%;
-  bottom: -2rem;
+  bottom: -3rem;
   transform: translateX(-50%);
 }
 
