@@ -22,6 +22,15 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 .flex {
@@ -30,7 +39,7 @@ a {
 
 .container {
   width: 100%;
-  padding: 4rem 15%;
+  padding: 6rem 20%;
 }
 
 .mob-only {
@@ -44,10 +53,10 @@ a {
 
 .btn {
   background: url(./images/jp-background.png);
-  padding: 1rem 2rem;
+  padding: 1.5rem 3rem;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.15rem;
+  font-size: 1.75rem;
 }
 
 .img-group-wrapper {
@@ -64,7 +73,6 @@ a {
 .img-group img {
   width: calc(50% - 0.5rem);
   object-fit: cover;
-  max-height: 600px;
 }
 
 .txt-group {
@@ -76,7 +84,6 @@ a {
 }
 
 .txt-group h2 {
-  font-size: 2rem;
   font-family: "Ropa Sans", sans-serif;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -84,13 +91,12 @@ a {
 
 .txt-group p {
   text-align: left;
-  font-size: 1.15rem;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
 .underline {
-  border-bottom: 3px solid #dbbd44;
+  border-bottom: 5px solid #dbbd44;
 }
 
 .bold {
@@ -122,8 +128,9 @@ nav {
 }
 
 .logo img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -133,10 +140,6 @@ nav {
 
 .nav-links li {
   padding-right: 2em;
-}
-
-nav a {
-  font-size: 1em;
 }
 
 .burger {
@@ -231,13 +234,11 @@ nav a:hover::after {
 }
 
 .hero-content h1 {
-  font-size: 4rem;
-  border-bottom: 3px solid #dbbd44;
+  font-size: 6rem;
 }
 
-.hero-content h3 {
-  font-size: 1.5rem;
-  letter-spacing: 2px;
+.hero-content h2 {
+  letter-spacing: 3px;
   margin-bottom: 1rem;
 }
 
@@ -251,8 +252,8 @@ nav a:hover::after {
   background: url(./images/jp-background.png);
   background-size: cover;
   color: #fff;
-  border-top: 0.5rem solid #dbbd44;
-  border-bottom: 0.5rem solid #dbbd44;
+  border-top: 1rem solid #dbbd44;
+  border-bottom: 1rem solid #dbbd44;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,16 +261,20 @@ nav a:hover::after {
 }
 
 .cta h2 {
-  font-size: 4rem;
+  font-size: 6rem;
+  font-family: "Ropa Sans", sans-serif;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .cta h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
 }
 
 .cta a {
-  border-bottom: 3px solid #dbbd44;
+  font-size: 2rem;
 }
 
 /* Contact ---------------------------------- */
@@ -287,10 +292,16 @@ nav a:hover::after {
   margin-bottom: 1rem;
   border: 1px solid #dbbd44;
   padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .contact-form textarea {
+  font-family: "Montserrat", sans-serif;
   resize: vertical;
+}
+
+.contact .img-group img {
+  max-height: 650px;
 }
 
 /* Footer ---------------------------------- */
@@ -314,7 +325,11 @@ footer .social-links img {
 footer .social-links a {
   background-color: #dbbd44;
   align-items: center;
-  /* padding: 1rem 15rem; */
+  padding: 1.5rem 3rem;
+}
+
+footer .social-links a img {
+  margin-right: 1rem;
 }
 
 footer .copyright {
