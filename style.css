@@ -22,15 +22,15 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .flex {
@@ -39,7 +39,7 @@ p {
 
 .container {
   width: 100%;
-  padding: 6rem 20%;
+  padding: 6rem 15%;
 }
 
 .mob-only {
@@ -53,10 +53,10 @@ p {
 
 .btn {
   background: url(./images/jp-background.png);
-  padding: 1.5rem 3rem;
+  padding: 1rem 2rem;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.75rem;
+  font-size: 1.15rem;
 }
 
 .img-group-wrapper {
@@ -73,6 +73,7 @@ p {
 .img-group img {
   width: calc(50% - 0.5rem);
   object-fit: cover;
+  max-height: 525px;
 }
 
 .txt-group {
@@ -128,8 +129,8 @@ nav {
 }
 
 .logo img {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -261,20 +262,20 @@ nav a:hover::after {
 }
 
 .cta h2 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: "Ropa Sans", sans-serif;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 .cta h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   letter-spacing: 1px;
 }
 
 .cta a {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* Contact ---------------------------------- */
@@ -292,16 +293,15 @@ nav a:hover::after {
   margin-bottom: 1rem;
   border: 1px solid #dbbd44;
   padding: 1rem;
-  font-size: 1.5rem;
 }
 
 .contact-form textarea {
   font-family: "Montserrat", sans-serif;
-  resize: vertical;
+  resize: none;
 }
 
 .contact .img-group img {
-  max-height: 650px;
+  max-height: 500px;
 }
 
 /* Footer ---------------------------------- */
@@ -309,8 +309,12 @@ footer {
   background: url(./images/jp-background.png);
   background-size: cover;
   border-top: 1rem solid #dbbd44;
-  border-bottom: 4rem solid #dbbd44;
+  border-bottom: 2rem solid #dbbd44;
   position: relative;
+}
+
+footer.container {
+  padding: 4rem 15%;
 }
 
 footer .social-links {
@@ -318,36 +322,37 @@ footer .social-links {
 }
 
 footer .social-links li {
-  width: 600px;
+  width: calc(50% - 1rem);
 }
 
 footer .social-links a {
   background-color: #dbbd44;
   align-items: center;
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   justify-content: center;
   font-family: "Ropa Sans", sans-serif;
-  font-size: 1.75rem;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 footer .social-links img {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   margin-right: 1rem;
 }
 
 footer .footer-img {
   position: absolute;
-  bottom: -4rem;
+  bottom: -2rem;
   right: 0;
-  height: 500px;
+  filter: drop-shadow(2px 4px 8px #010101);
+  pointer-events: none;
 }
 
 footer .copyright {
   position: absolute;
   left: 50%;
-  bottom: -3rem;
+  bottom: -1.75rem;
   transform: translateX(-50%);
 }
 
