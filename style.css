@@ -259,6 +259,7 @@ nav a:hover::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .cta h2 {
@@ -354,10 +355,73 @@ footer .copyright {
   left: 50%;
   bottom: -1.75rem;
   transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .img-group-wrapper,
+  .txt-group {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1340px) {
+  /* Hero section to change pending client review */
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .img-group img {
+    max-height: 600px;
+  }
+
+  footer .footer-img {
+    display: none;
+  }
+}
+
+@media (max-width: 1008px) {
+  .intro,
+  .contact {
+    flex-direction: column;
+  }
+
+  .img-group-wrapper,
+  .txt-group {
+    width: 100%;
+  }
+
+  .txt-group h2 {
+    margin-top: 2rem;
+  }
+
+  .right.txt-group,
+  .left.txt-group {
+    padding: 0;
+  }
+
+  .left.txt-group {
+    order: 1;
+  }
 }
 
 /*Navbar Hamburger Menu*/
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+  /* Hero section to change pending client review */
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+  /* Hero section to change pending client review */
+
   .mob-only {
     display: block;
   }
@@ -416,5 +480,69 @@ footer .copyright {
 
   .nav-active {
     transform: translateX(0);
+  }
+
+  .cta h2 {
+    font-size: 3.25rem;
+  }
+
+  .cta h3 {
+    font-size: 1.25rem;
+  }
+
+  .cta a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Hero section to change pending client review */
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+  }
+  /* Hero section to change pending client review */
+
+  .container {
+    padding: 4rem 10%;
+  }
+
+  footer.container {
+    padding: 2.5rem 10%;
+  }
+
+  footer .social-links li {
+    width: calc(50% - 0.5rem);
+  }
+
+  footer .social-links a {
+    padding: 0.5rem;
+    letter-spacing: 0px;
+  }
+
+  footer .social-links img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (max-width: 488px) {
+  /* Hero section to change pending client review */
+
+  footer {
+    border-bottom: 3rem solid #dbbd44;
+  }
+
+  footer .social-links img {
+    margin-right: 0.5rem;
+  }
+
+  footer .copyright {
+    bottom: -2.75rem;
   }
 }
