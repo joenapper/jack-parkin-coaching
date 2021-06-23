@@ -50,14 +50,21 @@ a {
   font-size: 1.15rem;
 }
 
-.img-group {
+.img-group-wrapper {
+  display: block;
   width: 60%;
+}
+
+.img-group {
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .img-group img {
   width: calc(50% - 0.5rem);
+  object-fit: cover;
+  max-height: 600px;
 }
 
 .txt-group {
@@ -69,8 +76,25 @@ a {
 }
 
 .txt-group h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: "Ropa Sans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.txt-group p {
+  text-align: left;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.underline {
   border-bottom: 3px solid #dbbd44;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 /* Header ---------------------------------- */
@@ -290,7 +314,7 @@ footer .social-links img {
 footer .social-links a {
   background-color: #dbbd44;
   align-items: center;
-  padding: 1rem 15rem;
+  /* padding: 1rem 15rem; */
 }
 
 footer .copyright {
