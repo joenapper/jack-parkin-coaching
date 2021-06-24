@@ -52,7 +52,7 @@ p {
 }
 
 .btn {
-  background: url(./images/jp-background.png);
+  background: url(./assets/images/jp-background.png);
   padding: 1rem 2rem;
   color: #fff;
   text-transform: uppercase;
@@ -204,11 +204,6 @@ nav a:hover::after {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(./images/jp-hero.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
 }
 
@@ -222,6 +217,13 @@ nav a:hover::after {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.hero video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
 .hero-content {
   position: relative;
   width: 100%;
@@ -232,15 +234,19 @@ nav a:hover::after {
   align-items: center;
   color: #fff;
   z-index: 1;
+  text-align: center;
 }
 
 .hero-content h1 {
   font-size: 6rem;
+  font-family: "Ropa Sans", sans-serif;
+  text-transform: uppercase;
 }
 
-.hero-content h2 {
-  letter-spacing: 3px;
-  margin-bottom: 1rem;
+.hero-content span {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
 }
 
 /* Intro ---------------------------------- */
@@ -250,7 +256,7 @@ nav a:hover::after {
 
 /* Call To Action ---------------------------------- */
 .cta {
-  background: url(./images/jp-background.png);
+  background: url(./assets/images/jp-background.png);
   background-size: cover;
   color: #fff;
   border-top: 1rem solid #dbbd44;
@@ -307,7 +313,7 @@ nav a:hover::after {
 
 /* Footer ---------------------------------- */
 footer {
-  background: url(./images/jp-background.png);
+  background: url(./assets/images/jp-background.png);
   background-size: cover;
   border-top: 1rem solid #dbbd44;
   border-bottom: 2rem solid #dbbd44;
@@ -367,15 +373,6 @@ footer .copyright {
 }
 
 @media (max-width: 1340px) {
-  /* Hero section to change pending client review */
-  .hero-content h1 {
-    font-size: 4rem;
-  }
-
-  .hero-content h2 {
-    font-size: 1.75rem;
-  }
-
   .img-group img {
     max-height: 600px;
   }
@@ -412,15 +409,13 @@ footer .copyright {
 
 /*Navbar Hamburger Menu*/
 @media (max-width: 768px) {
-  /* Hero section to change pending client review */
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
-  .hero-content h2 {
-    font-size: 1.5rem;
+  .hero-content span {
+    font-size: 1.15rem;
   }
-  /* Hero section to change pending client review */
 
   .mob-only {
     display: block;
@@ -496,18 +491,6 @@ footer .copyright {
 }
 
 @media (max-width: 540px) {
-  /* Hero section to change pending client review */
-  .hero-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-content h2 {
-    font-size: 1rem;
-    text-align: center;
-    width: 90%;
-  }
-  /* Hero section to change pending client review */
-
   .container {
     padding: 4rem 10%;
   }
@@ -532,7 +515,14 @@ footer .copyright {
 }
 
 @media (max-width: 488px) {
-  /* Hero section to change pending client review */
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content span {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 
   footer {
     border-bottom: 3rem solid #dbbd44;
