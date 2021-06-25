@@ -52,7 +52,7 @@ p {
 }
 
 .btn {
-  background: url(./assets/images/jp-background.png);
+  background: url(../images/jp-background.png);
   padding: 1rem 2rem;
   color: #fff;
   text-transform: uppercase;
@@ -133,6 +133,10 @@ nav {
   transform: translateX(-50%);
 }
 
+.logo a::after {
+  display: none;
+}
+
 .logo img {
   width: 80px;
   height: 80px;
@@ -205,96 +209,6 @@ nav a:hover::after {
   }
 }
 
-/* Hero ---------------------------------- */
-.hero {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.hero::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.hero video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-}
-
-.hero-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  z-index: 1;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 6rem;
-  font-family: "Ropa Sans", sans-serif;
-  text-transform: uppercase;
-}
-
-.hero-content span {
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  margin-bottom: 2rem;
-}
-
-/* Intro ---------------------------------- */
-.right.txt-group {
-  padding-left: 2rem;
-}
-
-/* Call To Action ---------------------------------- */
-.cta {
-  background: url(./assets/images/jp-background.png);
-  background-size: cover;
-  color: #fff;
-  border-top: 1rem solid #dbbd44;
-  border-bottom: 1rem solid #dbbd44;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.cta h2 {
-  font-size: 4rem;
-  font-family: "Ropa Sans", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.cta h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  letter-spacing: 1px;
-}
-
-.cta a {
-  font-size: 1.5rem;
-  transition: 0.2s ease-in-out;
-}
-
-.cta a:hover {
-  letter-spacing: 3px;
-}
-
 /* Contact ---------------------------------- */
 .left.txt-group {
   padding-right: 2rem;
@@ -323,7 +237,7 @@ nav a:hover::after {
 
 /* Footer ---------------------------------- */
 footer {
-  background: url(./assets/images/jp-background.png);
+  background: url(../images/jp-background.png);
   background-size: cover;
   border-top: 1rem solid #dbbd44;
   border-bottom: 2rem solid #dbbd44;
@@ -399,11 +313,6 @@ footer .copyright {
 }
 
 @media (max-width: 1008px) {
-  .intro,
-  .contact {
-    flex-direction: column;
-  }
-
   .img-group-wrapper,
   .txt-group {
     width: 100%;
@@ -412,27 +321,10 @@ footer .copyright {
   .txt-group h2 {
     margin-top: 2rem;
   }
-
-  .right.txt-group,
-  .left.txt-group {
-    padding: 0;
-  }
-
-  .left.txt-group {
-    order: 1;
-  }
 }
 
 /*Navbar Hamburger Menu*/
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 5rem;
-  }
-
-  .hero-content span {
-    font-size: 1.15rem;
-  }
-
   .mob-only {
     display: block;
   }
@@ -495,18 +387,6 @@ footer .copyright {
   .nav-active {
     transform: translateX(0);
   }
-
-  .cta h2 {
-    font-size: 3.25rem;
-  }
-
-  .cta h3 {
-    font-size: 1.25rem;
-  }
-
-  .cta a {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 540px) {
@@ -542,35 +422,8 @@ footer .copyright {
   }
 }
 
-@media (max-width: 488px) {
-  .hero-content h1 {
-    font-size: 3.5rem;
-  }
-
-  .hero-content span {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
 @media (max-width: 375px) {
   h2 {
     font-size: 2.25rem;
-  }
-
-  .hero-content h1 {
-    font-size: 3rem;
-  }
-
-  .cta h2 {
-    font-size: 3rem;
-  }
-
-  .cta h3 {
-    font-size: 1.25rem;
-  }
-
-  .cta a {
-    font-size: 1.25rem;
   }
 }
