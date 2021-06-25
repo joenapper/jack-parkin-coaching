@@ -57,6 +57,11 @@ p {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.15rem;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 0 5px 3px #dbbd44;
 }
 
 .img-group-wrapper {
@@ -283,6 +288,11 @@ nav a:hover::after {
 
 .cta a {
   font-size: 1.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.cta a:hover {
+  letter-spacing: 3px;
 }
 
 /* Contact ---------------------------------- */
@@ -340,6 +350,12 @@ footer .social-links a {
   font-family: "Ropa Sans", sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+
+footer .social-links a:hover {
+  box-shadow: 0 0 5px 3px #010101;
+  letter-spacing: 3px;
 }
 
 footer .social-links img {
