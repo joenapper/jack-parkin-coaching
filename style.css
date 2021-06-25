@@ -458,7 +458,7 @@ footer .copyright {
 
   .nav-links {
     position: absolute;
-    padding: 16vh 0;
+    padding: 14vh 0 16vh 0;
     top: 0;
     right: 0;
     height: 100vh;
