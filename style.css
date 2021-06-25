@@ -431,16 +431,18 @@ footer .copyright {
 
   .logo {
     position: relative;
+    z-index: 0;
   }
 
   .burger {
     display: block;
     cursor: pointer;
+    z-index: 1;
   }
 
   .nav-links {
     position: absolute;
-    padding: 14vh 0 10vh 0;
+    padding: 16vh 0;
     top: 0;
     right: 0;
     height: 100vh;
@@ -452,6 +454,7 @@ footer .copyright {
     transform: translateX(100%);
     transition: transform 0.35s ease-in;
     overflow-x: hidden;
+    z-index: 1;
   }
 
   .nav-links::before {
@@ -495,6 +498,10 @@ footer .copyright {
     padding: 4rem 10%;
   }
 
+  footer {
+    border-bottom: 4rem solid #dbbd44;
+  }
+
   footer.container {
     padding: 2.5rem 10%;
   }
@@ -511,6 +518,11 @@ footer .copyright {
   footer .social-links img {
     height: 20px;
     width: 20px;
+    margin-right: 0.5rem;
+  }
+
+  footer .copyright {
+    bottom: -2.75rem;
   }
 }
 
@@ -523,16 +535,26 @@ footer .copyright {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
+}
 
-  footer {
-    border-bottom: 3rem solid #dbbd44;
+@media (max-width: 375px) {
+  h2 {
+    font-size: 2.25rem;
   }
 
-  footer .social-links img {
-    margin-right: 0.5rem;
+  .hero-content h1 {
+    font-size: 3rem;
   }
 
-  footer .copyright {
-    bottom: -2.75rem;
+  .cta h2 {
+    font-size: 3rem;
+  }
+
+  .cta h3 {
+    font-size: 1.25rem;
+  }
+
+  .cta a {
+    font-size: 1.25rem;
   }
 }
