@@ -4,4 +4,79 @@ header {
   opacity: 0.9;
 }
 
-/* Hero */
+/* Consultation Form */
+.consultation-form-wrapper {
+  justify-content: space-between;
+}
+
+.consultation-form-wrapper form,
+.consultation-form-wrapper aside {
+  margin-top: 8vh;
+  width: calc(50% - 0.5rem);
+}
+
+.consultation-form img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #dbbd44;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.consultation-form input,
+.consultation-form textarea {
+  margin-bottom: 1rem;
+  border: 1px solid #dbbd44;
+  padding: 1rem;
+}
+
+.consultation-form textarea {
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  border: 1px solid #dbbd44;
+  padding: 1rem;
+  margin-top: 5px;
+}
+
+button.next-btn,
+button.previous-btn,
+button.submit-btn {
+  float: right;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  background-color: #dbbd44;
+  font-family: "Montserrat";
+  font-size: 18px;
+  cursor: pointer;
+}
+button.previous-btn {
+  float: left;
+}
+button.submit-btn {
+  background-color: aquamarine;
+}
+
+.why li i {
+  color: #dbbd44;
+  margin-right: 0.5rem;
+}

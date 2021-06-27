@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ropa+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/form.css">
 </head>
@@ -39,9 +40,86 @@
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="container">
-        <h1>Consultation Form</h1>
+    <!-- Consultation -->
+    <section class="consultation-form-wrapper container flex">
+        <form class="consultation-form">
+            <!-- <img src="./assets/images/jp-footer-2.png" alt=""> -->
+            <div class="step step-1 active">
+                <h2>Contact details</h2>
+                <div class="form-group">
+                  <label for="fullName">Full Name*</label>
+                  <input type="text" id="fullName" name="full-name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="text" id="email" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="contactNumber">Contact number*</label>
+                  <input type="text" id="contactNumber" name="contact-number">
+                </div>
+                <div class="form-group">
+                    <label for="instagram">Instagram</label>
+                    <input type="text" id="instagram" name="instagram">
+                  </div>
+                <button type="button" class="next-btn">Next</button>
+              </div>
+        
+              <div class="step step-2">
+                <h2>Current health</h2>
+                <div class="form-group">
+                  <label for="age">Age</label>
+                  <input type="text" id="age" name="age">
+                </div>
+                <div class="form-group">
+                  <label for="height">Height</label>
+                  <input type="number" id="height" name="height">
+                </div>
+                <div class="form-group">
+                  <label for="currentWeight">Current Weight</label>
+                  <input type="number" id="currentWeight" name="current-weight">
+                </div>
+                <button type="button" class="previous-btn">Prev</button>
+                <button type="button" class="next-btn">Next</button>
+              </div>
+        
+              <div class="step step-3">
+                <h2>Food</h2>
+                <div class="form-group">
+                  <label for="likedFoods">What foods do you like?</label>
+                  <input type="text" id="likedFoods" name="liked-foods">
+                </div>
+                <div class="form-group">
+                  <label for="dislikedFoods">What foods do you dislike?</label>
+                  <input type="text" id="dislikedFoods" name="disliked-foods">
+                </div>
+                <div class="form-group">
+                  <label for="foodAllergies">Do you have any food allergies?</label>
+                  <input type="text" id="foodAllergies" name="food-allergies">
+                </div>
+                <button type="button" class="previous-btn">Prev</button>
+                <button type="submit" class="btn submit-btn">Submit</button>
+              </div>
+        </form>
+
+        <aside class="why">
+            <h2>Why fill out my consultation form?</h2>
+            <ul>
+                <li class="flex"><i class="fas fa-check"></i><p>Learn more on how I can help improve your lifestyle</p></li>
+                <li class="flex"><i class="fas fa-check"></i><p>Lorem ipsum dolor sit amet.</p></li>
+                <li class="flex"><i class="fas fa-check"></i><p>Lorem ipsum dolor sit amet sit san.</p></li>
+                <li class="flex"><i class="fas fa-check"></i><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil.</p></li>
+                <li class="flex"><i class="fas fa-check"></i><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil.</p></li>
+                <li class="flex"><i class="fas fa-check"></i><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></li>
+            </ul>
+        </aside>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta container">
+        <h2>Meet your coach</h2>
+        <h3>There’s more to it than just lifting weights, losing fat and looking good</h3>
+        <a href="/my-journey.html" class="underline">Learn more</a>
     </section>
 
     <!-- Contact -->
@@ -78,5 +156,6 @@
     </footer>
 
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/form.js"></script>
 </body>
 </html>
