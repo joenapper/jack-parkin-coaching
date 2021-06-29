@@ -47,11 +47,6 @@
   margin-bottom: 2rem;
 }
 
-/* Intro ---------------------------------- */
-.right.txt-group {
-  padding-left: 2rem;
-}
-
 @media (max-width: 1008px) {
   .intro {
     flex-direction: column;

@@ -209,6 +209,11 @@ nav a:hover::after {
   }
 }
 
+/* Intro ---------------------------------- */
+.right.txt-group {
+  padding-left: 2rem;
+}
+
 /* Call To Action ---------------------------------- */
 .cta {
   background: url(../images/jp-background.png);
