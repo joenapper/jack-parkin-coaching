@@ -349,6 +349,19 @@ footer .copyright {
 }
 
 @media (max-width: 1008px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .right.txt-group,
+  .left.txt-group {
+    padding: 0;
+  }
+
+  .left.txt-group {
+    order: 1;
+  }
+
   .img-group-wrapper,
   .txt-group {
     width: 100%;
@@ -423,6 +436,18 @@ footer .copyright {
   .nav-active {
     transform: translateX(0);
   }
+
+  .cta h2 {
+    font-size: 3.25rem;
+  }
+
+  .cta h3 {
+    font-size: 1.25rem;
+  }
+
+  .cta a {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 540px) {
@@ -461,5 +486,17 @@ footer .copyright {
 @media (max-width: 375px) {
   h2 {
     font-size: 2.25rem;
+  }
+
+  .cta h2 {
+    font-size: 3rem;
+  }
+
+  .cta h3 {
+    font-size: 1.25rem;
+  }
+
+  .cta a {
+    font-size: 1.25rem;
   }
 }

@@ -53,18 +53,8 @@
 }
 
 @media (max-width: 1008px) {
-  .intro,
-  .contact {
+  .intro {
     flex-direction: column;
-  }
-
-  .right.txt-group,
-  .left.txt-group {
-    padding: 0;
-  }
-
-  .left.txt-group {
-    order: 1;
   }
 }
 
@@ -75,18 +65,6 @@
 
   .hero-content span {
     font-size: 1.15rem;
-  }
-
-  .cta h2 {
-    font-size: 3.25rem;
-  }
-
-  .cta h3 {
-    font-size: 1.25rem;
-  }
-
-  .cta a {
-    font-size: 1.5rem;
   }
 }
 
@@ -104,17 +82,5 @@
 @media (max-width: 375px) {
   .hero-content h1 {
     font-size: 3rem;
-  }
-
-  .cta h2 {
-    font-size: 3rem;
-  }
-
-  .cta h3 {
-    font-size: 1.25rem;
-  }
-
-  .cta a {
-    font-size: 1.25rem;
   }
 }

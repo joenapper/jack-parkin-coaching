@@ -69,14 +69,41 @@ button.submit-btn {
   font-size: 18px;
   cursor: pointer;
 }
+
 button.previous-btn {
   float: left;
 }
+
 button.submit-btn {
   background-color: aquamarine;
+}
+
+.why {
+  border: 1px solid #dbbd44;
+  padding: 1rem 0rem 1rem 1rem;
+}
+
+.why h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.why li {
+  margin-bottom: 1rem;
 }
 
 .why li i {
   color: #dbbd44;
   margin-right: 0.5rem;
+}
+
+@media (max-width: 1008px) {
+  .consultation-form-wrapper {
+    flex-direction: column;
+  }
+
+  .consultation-form-wrapper form,
+  .consultation-form-wrapper aside {
+    width: 100%;
+  }
 }
